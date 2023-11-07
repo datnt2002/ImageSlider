@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         if (currentPos > 0) {
             viewPager2.setCurrentItem(currentPos - 1);
         } else {
-            // Optional: Wrap around to the last item if on the first item.
             viewPager2.setCurrentItem(viewPager2.getAdapter().getItemCount() - 1);
         }
     }
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         if (currentPos < viewPager2.getAdapter().getItemCount() - 1) {
             viewPager2.setCurrentItem(currentPos + 1);
         } else {
-            // Optional: Wrap around to the first item if on the last item.
             viewPager2.setCurrentItem(0);
         }
     }
